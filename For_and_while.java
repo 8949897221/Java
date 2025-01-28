@@ -58,4 +58,4 @@ public class EvenDigitDivisor {
         }
     }
 }
-
+//Simple code for checking the number is prime or not is above
