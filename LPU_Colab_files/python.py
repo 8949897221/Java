@@ -29,3 +29,33 @@ elif c == 10:
     print(f"The result is: {np.cos(a)}")
 else:
     print("Invalid choice")
+
+
+#Code for all the matrices operations
+import numpy as np
+A=np.array([[1,2],
+           [3,4]])
+B=np.array([[5,6],
+            [7,8]])
+#Matrix Addition
+C=A+B
+print("Matrix A+B ",C)
+#Matrix Multiplication
+D=np.dot(A,B)
+print("Matrix A*B ",D)
+#Matrix Transpose
+E=A.T
+print("Transpose of Matrix A ",E)
+det_A=np.linalg.det(A)
+print("Determinant of Matrix A ",det_A)
+inv_A=np.linalg.inv(A)
+print("Inverse of Matrix A ",inv_A)
+if det_A!=0:
+    inv_A=np.linalg.inv(A)
+    print("Inverse of Matrix A ",inv_A)
+else:
+    print("Matrix A is not invertible")
+
+    b=np.array([1,2])
+    x=np.linalg.solve(A,b)
+    print("Solution of Ax=b ",x)
