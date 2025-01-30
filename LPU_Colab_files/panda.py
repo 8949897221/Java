@@ -12,3 +12,10 @@ print(df)
 #To filter data according to the condition
 filtered_df=df[df['Age']<25]
 print(filtered_df)
+import  pandas as pd
+data={'Department':['HR','Engineering','HR','Engineering','HR'],
+      'Employee':['Alice','Bob','Charlie','David','Eve'],
+      'Salary':[50000,60000,55000,70000,52000]}
+df=pd.DataFrame(data)
+department_salary=df.groupby('Department')['Salary'].mean()
+print(department_salary)
