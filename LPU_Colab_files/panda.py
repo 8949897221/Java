@@ -9,3 +9,6 @@ print(df)
 print(df['Reg No.'])
 df['Age']=[20,18,19,18,21]
 print(df)
+#To filter data according to the condition
+filtered_df=df[df['Age']<25]
+print(filtered_df)
