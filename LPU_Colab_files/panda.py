@@ -7,3 +7,5 @@ data={'Name':['Vansh','Piyush','Rahul','Rohit','Rajat'],
 df=pd.DataFrame(data)
 print(df)
 print(df['Reg No.'])
+df['Age']=[20,18,19,18,21]
+print(df)
