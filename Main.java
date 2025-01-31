@@ -81,7 +81,7 @@ public class Main{
     public static void main(String arg[]){
         int i;
         for(i=1;i<=5;i++){
-            System.out.println("lpu");
+            System.out.println(i);
         }
     }
 }
