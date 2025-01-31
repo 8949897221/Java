@@ -53,26 +53,35 @@
 
 
 import java.util.*;
+// public class Main{
+//     public static void main(String arg[]){
+//         Scanner s=new Scanner (System.in);
+//         char a=s.next().charAt(0);
+//         switch(a){
+//             case '1':
+//                 System.out.printf("Red");
+//                 break;
+//              case '2':
+//                 System.out.printf("Blue");
+//                 break;
+//              case '3':
+//                 System.out.printf("Yellow");
+//                 break;
+//              case '4':
+//                 System.out.printf("Orange");
+//                 break;
+//             default:
+//                 System.out.println("INvalid choice");
+//         }
+//         System.out.println("Hello");
+//     }
+// }
+
 public class Main{
     public static void main(String arg[]){
-        Scanner s=new Scanner (System.in);
-        char a=s.next().charAt(0);
-        switch(a){
-            case '1':
-                System.out.printf("Red");
-                break;
-             case '2':
-                System.out.printf("Blue");
-                break;
-             case '3':
-                System.out.printf("Yellow");
-                break;
-             case '4':
-                System.out.printf("Orange");
-                break;
-            default:
-                System.out.println("INvalid choice");
+        int i;
+        for(i=1;i<=5;i++){
+            System.out.println("lpu");
         }
-        System.out.println("Hello");
     }
 }
