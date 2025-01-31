@@ -52,7 +52,7 @@
 // }
 
 
-import java.util.*;
+// import java.util.*;
 // public class Main{
 //     public static void main(String arg[]){
 //         Scanner s=new Scanner (System.in);
@@ -77,11 +77,21 @@ import java.util.*;
 //     }
 // }
 
+import java.util.*;
 public class Main{
     public static void main(String arg[]){
-        int i;
-        for(i=1;i<=5;i++){
-            System.out.println(i);
+       
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        System.out.printf("Number is %d \n",a);
+        int b=a;
+        int count=0; 
+        while(a>=1){
+            a=a/10;
+            count++;
+            
         }
+        System.out.printf("The no of digits in %d is %d",b,count);
     }
 }
+
