@@ -94,4 +94,31 @@ public class Main{
         System.out.printf("The no of digits in %d is %d",b,count);
     }
 }
+import java.util.*;
+public class Main{
+    public static void main(String arg[]){
+        Scanner s=new Scanner(System.in);
+        int n1=s.nextInt();
+        int n2=s.nextInt();
+        int n22=n2;
+        int rem1=0,rem2=0;
+        int ctr=0;
+        while(n1!=0){
+            rem1=n1%10;
+            while(n2!=0){
+                rem2=n2%10;
+            
+            if(rem1==rem2)
+            ctr++;
+            n2=n2/10;}
+        
+        n1=n1/10;
+        n2=n22;
+        }
+        System.out.println("No of common digits="+ctr);
+    }
+}
+
+
+
 
