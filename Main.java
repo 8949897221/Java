@@ -2,6 +2,7 @@
 import java.util.*;
 public class Main{
     public static void main(String arg[]){
+        Scanner sc=new Scanner(System.in);
         int [][] a=new int[3][];
         a[0]=new int [2];
         a[1]=new int [2];
