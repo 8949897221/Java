@@ -284,19 +284,27 @@
 // //     }
 // // }
 
-import java.util.*;
+import java.util.Scanner;
 public class Main{
-    public static void main(String arg[]){
+    public static void main(String []arg){
         Scanner sc=new Scanner(System.in);
-        String s=sc.nextLine();
-        StringBuffer sb=new StringBuffer(s);
-        sb.reverse();
-        String ev=sb.toString();
-        if(s.equals(ev)){
-            System.out.println("Palindrome");
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        int b[]=new int[10];
+        int k=0;
+        for(int i=0;i<n;i++){
+            a[i]=sc.nextInt();
         }
-        else{
-            System.out.println("Not Palindrome");
+        int sum=0;
+        for(int i=n-1;i>=0;i--){
+           if(a[i]>sum){
+            b[k++]=a[i];
+           }
+           sum=sum+a[i];
+
+        }
+        for(int i=k-1;i>=0;i--){
+            System.out.print(b[i]+" ");
         }
     }
 }
