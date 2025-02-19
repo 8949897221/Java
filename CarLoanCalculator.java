@@ -46,5 +46,5 @@ public class CarLoanCalculator {
         System.out.printf("Total Cost: %.2f\n", total);
         
         scanner.close();
-    }
+    
 }
