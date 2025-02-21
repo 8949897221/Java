@@ -1,20 +1,22 @@
-//Single inheritance
 class A{
-    void abc(){
-        int a=5;
-        System.out.println("abc");
+    A(){
+        System.out.println("parent");
+    }
+    A(int x){
+        System.out.println(x+2);
     }
 }
 class B extends A{
-    void xyz(){
-        System.out.println(a);
-        abc();
+    B(){
+        System.out.println("child");
+    }
+    B(int y){
+        System.out.println(y+3);
     }
 }
 public class Main3{
-    public static void main(String arg[]){
-        B obj=new B();
-        obj.xyz();
-        
+    public static void main(String[] args){
+        new B();
+        new B(5);
     }
 }
