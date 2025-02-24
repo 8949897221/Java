@@ -1,8 +1,15 @@
 class A{
-    A(){
-        System.out.println("parent");
+    int x=5;
+}
+class B{
+    int y=6;
+    void display(){
+        System.out.println(new A().x+y);
     }
-    A(int x){
-        System.out.println(x+2);
+}
+public class Main3{
+    public static void main(String arg[]){
+        new B().display();
+        obj.display();
     }
 }
